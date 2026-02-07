@@ -3,113 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shruthi Gosikonda | Full Stack Portfolio</title>
+    <title>Shruthi Gosikonda | Full Stack Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .sidebar { height: 100vh; position: fixed; left: 0; top: 0; width: 260px; z-index: 100; }
-        .main-content { margin-left: 260px; }
-        .nav-link:hover { color: #818cf8; padding-left: 10px; transition: all 0.3s; }
-        @media (max-width: 768px) {
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .sidebar { height: 100vh; position: fixed; left: 0; top: 0; width: 280px; z-index: 100; background-color: #0a0a0a; }
+        .main-content { margin-left: 280px; }
+        .nav-link { transition: all 0.3s ease; color: #a3a3a3; }
+        .nav-link:hover, .nav-link.active { color: #6366f1; transform: translateX(5px); }
+        .profile-img { width: 150px; height: 150px; object-fit: cover; border: 4px solid #6366f1; }
+        @media (max-width: 1024px) {
             .sidebar { width: 100%; height: auto; position: relative; }
             .main-content { margin-left: 0; }
         }
-        .skill-badge { background: rgba(99, 102, 241, 0.1); color: #4f46e5; border: 1px solid rgba(99, 102, 241, 0.2); }
     </style>
 </head>
-<body class="bg-gray-50 text-slate-900">
+<body class="bg-white text-slate-800">
 
-    <nav class="sidebar bg-slate-900 text-white p-8 flex flex-col justify-between shadow-2xl">
+    <nav class="sidebar text-white p-10 flex flex-col justify-between items-center text-center">
         <div>
-            <div class="mb-10">
-                <h1 class="text-2xl font-bold border-l-4 border-indigo-500 pl-4">SHRUTHI G.</h1>
-                <p class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Full Stack Developer</p>
-            </div>
-            <ul class="space-y-6 font-medium">
-                <li><a href="#home" class="nav-link block">Home</a></li>
-                <li><a href="#about" class="nav-link block">About</a></li>
-                <li><a href="#skills" class="nav-link block">Skills</a></li>
-                <li><a href="#projects" class="nav-link block">Experience</a></li>
-                <li><a href="#contact" class="nav-link block">Contact</a></li>
+            <img src="image_1d783f.jpg" alt="Shruthi Gosikonda" class="profile-img rounded-full mx-auto mb-6 shadow-lg">
+            <h1 class="text-2xl font-bold tracking-tight">Shruthi G.</h1>
+            <p class="text-indigo-400 text-sm mb-10 uppercase tracking-widest">Software Developer</p>
+            
+            <ul class="space-y-6 text-left inline-block">
+                <li><a href="#home" class="nav-link flex items-center"><i class="fas fa-home mr-3"></i> Home</a></li>
+                <li><a href="#about" class="nav-link flex items-center"><i class="fas fa-user mr-3"></i> About</a></li>
+                <li><a href="#skills" class="nav-link flex items-center"><i class="fas fa-cog mr-3"></i> Skills</a></li>
+                <li><a href="#experience" class="nav-link flex items-center"><i class="fas fa-briefcase mr-3"></i> Experience</a></li>
+                <li><a href="#contact" class="nav-link flex items-center"><i class="fas fa-envelope mr-3"></i> Contact</a></li>
             </ul>
         </div>
-        <div class="flex gap-4 text-xl">
-            <a href="#" class="hover:text-indigo-400"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-indigo-400"><i class="fab fa-github"></i></a>
-            <a href="mailto:shruthiramesh.311@gmail.com" class="hover:text-indigo-400"><i class="fas fa-envelope"></i></a>
+        
+        <div class="flex gap-5 text-xl mt-10">
+            <a href="#" class="hover:text-indigo-500 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-indigo-500 transition"><i class="fab fa-github"></i></a>
+            <a href="mailto:shruthiramesh.311@gmail.com" class="hover:text-indigo-500 transition"><i class="fas fa-envelope"></i></a>
         </div>
     </nav>
 
     <main class="main-content">
         
-        <section id="home" class="min-h-screen flex items-center px-8 md:px-20 bg-white">
-            <div class="max-w-3xl">
-                <h2 class="text-indigo-600 font-semibold mb-4 tracking-wider uppercase">Welcome to my portfolio</h2>
-                <h1 class="text-6xl md:text-7xl font-extrabold text-slate-900 leading-tight">
-                    I build scalable <span class="text-indigo-600">Java</span> applications.
-                </h1>
-                <p class="mt-6 text-xl text-slate-600 leading-relaxed max-w-2xl">
-                    I am a Software Developer at <b>Tech Mahindra</b> with 2.2 years of experience creating robust backend systems and dynamic frontends for global clients.
+        <section id="home" class="min-h-screen flex items-center px-10 md:px-24 bg-slate-50">
+            <div>
+                <h2 class="text-indigo-600 font-semibold text-lg mb-2">Hello, I'm</h2>
+                <h1 class="text-6xl md:text-8xl font-bold text-slate-900 mb-6">Shruthi <br> Gosikonda</h1>
+                <p class="text-xl text-slate-600 max-w-2xl mb-10">
+                    A Software Developer with <b>2.2 years of experience</b>  specialized in building high-performance <b>Java and Spring Boot</b> applications[cite: 47, 58].
                 </p>
-                <div class="mt-10 flex gap-4">
-                    <a href="#projects" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-700 transition">View My Work</a>
-                    <a href="#contact" class="border-2 border-slate-900 px-8 py-4 rounded-lg font-bold hover:bg-slate-900 hover:text-white transition">Contact Me</a>
-                </div>
+                <a href="#experience" class="inline-block bg-indigo-600 text-white px-10 py-4 rounded-full font-bold shadow-lg hover:bg-indigo-700 transition transform hover:scale-105">View Projects</a>
             </div>
         </section>
 
-        <section id="about" class="py-24 px-8 md:px-20">
-            <h2 class="text-3xl font-bold mb-10 text-slate-800">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12 text-lg text-slate-600">
+        <section id="about" class="py-24 px-10 md:px-24">
+            <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="w-12 h-1 bg-indigo-600 mr-4"></span>About Me</h2>
+            <div class="grid md:grid-cols-2 gap-16 text-lg text-slate-600 leading-relaxed">
                 <p>
-                    Passionate about solving complex problems through clean code. My expertise lies in the <b>Java ecosystem</b>, where I build secure REST APIs and performant database architectures. 
+                    I am a reliable team player recognized for delivering high-quality code on time[cite: 55]. My expertise lies in the full software development lifecycle, from analyzing requirements to cloud deployment[cite: 48, 52, 80].
                 </p>
                 <p>
-                    Working with <b>General Electric (GE)</b> has honed my skills in technical audits and maintenance tracking systems, ensuring high-quality delivery in Agile environments.
+                    Currently at <b>Tech Mahindra</b>, I focus on building robust REST APIs and responsive front-end components using <b>Angular and React.js</b>[cite: 47, 73, 82].
                 </p>
             </div>
         </section>
 
-        <section id="skills" class="py-24 px-8 md:px-20 bg-slate-50">
-            <h2 class="text-3xl font-bold mb-12">Technical Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">Java</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">Spring Boot</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">Angular</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">React.js</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">SQL Server</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">AWS</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">Jenkins</p></div>
-                <div class="p-6 bg-white rounded-xl shadow-sm"><p class="font-bold text-indigo-600">TypeScript</p></div>
-            </div>
-        </section>
-
-        <section id="projects" class="py-24 px-8 md:px-20">
-            <h2 class="text-3xl font-bold mb-12">Professional Experience</h2>
-            <div class="space-y-16">
-                <div class="group border-b border-slate-200 pb-12">
-                    <span class="text-indigo-500 font-bold uppercase tracking-widest text-sm">Tech Mahindra | GE</span>
-                    <h3 class="text-3xl font-bold mt-2 group-hover:text-indigo-600 transition">Red Flag Review (RFR)</h3>
-                    <p class="mt-4 text-slate-600 text-lg">Developed a technical audit system reducing risk for GE site installations using Spring Boot, Angular, and AWS CloudWatch.</p>
+        <section id="skills" class="py-24 px-10 md:px-24 bg-white">
+            <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="w-12 h-1 bg-indigo-600 mr-4"></span>Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-8 border border-slate-100 rounded-2xl hover:border-indigo-500 transition shadow-sm text-center">
+                    <i class="fab fa-java text-4xl text-indigo-600 mb-4"></i>
+                    <p class="font-bold">Java & Spring</p>
                 </div>
-
-                <div class="group border-b border-slate-200 pb-12">
-                    <span class="text-indigo-500 font-bold uppercase tracking-widest text-sm">Tech Mahindra | GE</span>
-                    <h3 class="text-3xl font-bold mt-2 group-hover:text-indigo-600 transition">Engine Finding Report (EFR)</h3>
-                    <p class="mt-4 text-slate-600 text-lg">Implemented real-time maintenance tracking to optimize engine movement across maintenance gates.</p>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:border-indigo-500 transition shadow-sm text-center">
+                    <i class="fab fa-angular text-4xl text-red-600 mb-4"></i>
+                    <p class="font-bold">Angular / React</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:border-indigo-500 transition shadow-sm text-center">
+                    <i class="fas fa-database text-4xl text-blue-600 mb-4"></i>
+                    <p class="font-bold">SQL Server / MySQL</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:border-indigo-500 transition shadow-sm text-center">
+                    <i class="fab fa-aws text-4xl text-orange-500 mb-4"></i>
+                    <p class="font-bold">AWS & Cloud</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 px-8 md:px-20 bg-indigo-900 text-white text-center">
-            <h2 class="text-4xl font-bold mb-6">Let's build something great.</h2>
-            <p class="text-indigo-200 text-xl mb-10">Available for Software Engineer roles.</p>
-            <a href="mailto:shruthiramesh.311@gmail.com" class="bg-white text-indigo-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-indigo-50 transition shadow-xl">
-                Get In Touch
-            </a>
+        <section id="experience" class="py-24 px-10 md:px-24 bg-slate-50">
+            <h2 class="text-3xl font-bold mb-16 flex items-center"><span class="w-12 h-1 bg-indigo-600 mr-4"></span>Work Experience</h2>
+            <div class="space-y-20">
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/3">
+                        <p class="text-indigo-600 font-bold tracking-widest text-sm uppercase">Project 1 | GE</p>
+                        <h3 class="text-2xl font-bold mt-2">Red Flag Review (RFR)</h3>
+                        <p class="text-slate-500 mt-2 italic">Dec 2023 – Present [cite: 72]</p>
+                    </div>
+                    <div class="md:w-2/3 space-y-4 text-slate-600">
+                        <p>Developed and maintained APIs using <b>Java and Spring Boot</b> for technical audits[cite: 82].</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Designed responsive UI pages using <b>Angular and TypeScript</b>[cite: 83].</li>
+                            <li>Configured <b>AWS CloudWatch</b> for application health monitoring[cite: 86].</li>
+                            <li>Optimized SQL performance through inline query tuning[cite: 85].</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/3">
+                        <p class="text-indigo-600 font-bold tracking-widest text-sm uppercase">Project 2 | GE</p>
+                        <h3 class="text-2xl font-bold mt-2">Engine Finding Report (EFR)</h3>
+                    </div>
+                    <div class="md:w-2/3 space-y-4 text-slate-600">
+                        <p>Maintenance tracking process providing clear visibility of engine location and status[cite: 91].</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Developed real-time engine tracking across multiple maintenance gates[cite: 95].</li>
+                            <li>Improved coordination between maintenance and planning teams[cite: 98].</li>
+                            <li>Collaborated actively in <b>Agile ceremonies</b> and sprint planning[cite: 103].</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section id="contact" class="py-24 px-10 md:px-24 bg-indigo-600 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Interested in working together?</h2>
+                <p class="text-xl text-indigo-100 mb-10">I am currently available for new Software Development opportunities.</p>
+                <a href="mailto:shruthiramesh.311@gmail.com" class="bg-white text-indigo-600 px-12 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition shadow-2xl inline-block">Say Hello!</a>
+            </div>
+        </section>
+
+        <footer class="py-10 text-center text-slate-400 text-sm">
+            © 2026 Shruthi Gosikonda. All rights reserved.
+        </footer>
 
     </main>
 
